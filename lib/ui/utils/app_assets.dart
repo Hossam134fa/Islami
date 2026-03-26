@@ -8,4 +8,5 @@ abstract final class AppAssets {
   static const String recentQuran = "assets/images/img_most_recent.png";
   static const String splashBackground = "assets/images/splash_image.png";
   static const String islamiLogo = "assets/images/islami_logo.png";
+  static const String homeBackground = "assets/images/home_background.png";
 }
