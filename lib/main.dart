@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami/ui/screens/home/home.dart';
+import 'package:islami/ui/screens/onboarding/onboarding.dart';
 import 'package:islami/ui/screens/splash/splash.dart';
 import 'package:islami/ui/utils/app_colors.dart';
 
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
       routes: {
         Splash.routeName: (_) => const Splash(),
         Home.routeName: (_) => const Home(),
+        Onboarding.routeName: (_) => const Onboarding()
       },
     );
   }

@@ -9,4 +9,10 @@ abstract final class AppAssets {
   static const String splashBackground = "assets/images/splash_image.png";
   static const String islamiLogo = "assets/images/islami_logo.png";
   static const String homeBackground = "assets/images/home_background.png";
+  static const String islamiIntro = "assets/images/islami_intro.png";
+  static const String welcome = "assets/images/welcome.png";
+  static const String sebhaIntro = "assets/images/sebha_intro.png";
+  static const String radioIntro = "assets/images/radio_intro.png";
+  static const String quranIntro = "assets/images/quran_intro.png";
+  static const String mosque = "assets/images/mosque.png";
 }
