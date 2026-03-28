@@ -15,4 +15,8 @@ abstract final class AppAssets {
   static const String radioIntro = "assets/images/radio_intro.png";
   static const String quranIntro = "assets/images/quran_intro.png";
   static const String mosque = "assets/images/mosque.png";
+  static const String suraNumberFrame = "assets/images/img_sur_number_frame.png";
+  static const String mosqueQuran = "assets/images/mosque_quran.png";
+  static const String rightCorner = "assets/images/img_right_corner.png";
+  static const String leftCorner = "assets/images/img_left_corner.png";
 }

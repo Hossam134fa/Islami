@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:islami/ui/screens/home/home.dart';
 import 'package:islami/ui/screens/onboarding/onboarding.dart';
 import 'package:islami/ui/screens/splash/splash.dart';
+import 'package:islami/ui/screens/sura_details/sura_details.dart';
 import 'package:islami/ui/utils/app_colors.dart';
+import 'package:islami/ui/utils/app_constants.dart';
 
 void main() {
+  AppConstants.fillSuras();
   runApp(const MyApp());
 }
 
@@ -21,7 +24,8 @@ class MyApp extends StatelessWidget {
       routes: {
         Splash.routeName: (_) => const Splash(),
         Home.routeName: (_) => const Home(),
-        Onboarding.routeName: (_) => const Onboarding()
+        Onboarding.routeName: (_) => const Onboarding(),
+        SuraDetails.routeName: (_) => const SuraDetails()
       },
     );
   }
