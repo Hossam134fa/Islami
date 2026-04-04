@@ -19,4 +19,5 @@ abstract final class AppAssets {
   static const String mosqueQuran = "assets/images/mosque_quran.png";
   static const String rightCorner = "assets/images/img_right_corner.png";
   static const String leftCorner = "assets/images/img_left_corner.png";
+  static const String hadethCard = "assets/images/hadeth_card.png";
 }

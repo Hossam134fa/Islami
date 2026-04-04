@@ -8,6 +8,6 @@ class SuraDM {
     required this.nameAr,
     required this.nameEn,
     required this.numberOfAyahs,
-    required this.index,
+    required this.index
   });
 }
