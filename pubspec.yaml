@@ -9,6 +9,7 @@ environment:
 dependencies:
   introduction_screen: ^4.0.0
   carousel_slider: ^5.1.2
+  shared_preferences: ^2.5.5
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8

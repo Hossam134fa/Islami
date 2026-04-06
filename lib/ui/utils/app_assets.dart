@@ -20,4 +20,6 @@ abstract final class AppAssets {
   static const String rightCorner = "assets/images/img_right_corner.png";
   static const String leftCorner = "assets/images/img_left_corner.png";
   static const String hadethCard = "assets/images/hadeth_card.png";
+  static const String sebhaBackground = "assets/images/sebha_background.png";
+  static const String sebha = "assets/images/sebha.png";
 }

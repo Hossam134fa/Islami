@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami/model/sura_model.dart';
 import 'package:islami/ui/screens/home/tabs/quran/sura_row.dart';
 import 'package:islami/ui/screens/sura_details/sura_details.dart';
 import 'package:islami/ui/utils/app_assets.dart';
@@ -6,8 +7,15 @@ import 'package:islami/ui/utils/app_colors.dart';
 import 'package:islami/ui/utils/app_constants.dart';
 import 'package:islami/ui/utils/app_text_styles.dart';
 
-class QuranTap extends StatelessWidget {
+class QuranTap extends StatefulWidget {
   const QuranTap({super.key});
+
+  @override
+  State<QuranTap> createState() => _QuranTapState();
+}
+
+class _QuranTapState extends State<QuranTap> {
+  List<SuraDM> filteredSuraList = AppConstants.suras;
 
   @override
   Widget build(BuildContext context) {
@@ -37,6 +45,9 @@ class QuranTap extends StatelessWidget {
       borderRadius: BorderRadius.circular(10),
     );
     return TextField(
+      onChanged: (query){
+        search(query);
+      },
       decoration: InputDecoration(
         focusedBorder: defaultBorder,
         enabledBorder: defaultBorder,
@@ -55,9 +66,9 @@ class QuranTap extends StatelessWidget {
 
   Widget buildSuraListView() {
     return ListView.separated(
-      itemCount: AppConstants.suras.length,
+      itemCount: filteredSuraList.length,
       itemBuilder: (context, index) {
-        var sura = AppConstants.suras[index];
+        var sura = filteredSuraList[index];
         return InkWell(
           onTap: () {
             Navigator.pushNamed(
@@ -71,5 +82,12 @@ class QuranTap extends StatelessWidget {
       },
       separatorBuilder: (_, _) => Divider(indent: 64, endIndent: 64),
     );
+  }
+
+  void search(String query) {
+    filteredSuraList = AppConstants.suras.where((sura){
+      return sura.nameAr.contains(query) || sura.nameEn.toLowerCase().contains(query.toLowerCase());
+    }).toList();
+    setState(() {});
   }
 }

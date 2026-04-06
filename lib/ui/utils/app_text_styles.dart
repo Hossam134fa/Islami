@@ -3,6 +3,11 @@ import 'package:flutter/material.dart';
 import 'app_colors.dart';
 
 abstract final class AppTextStyles {
+  static const TextStyle white36Bold = TextStyle(
+    fontSize: 36,
+    color: AppColors.white,
+    fontWeight: FontWeight.bold,
+  );
   static const TextStyle white20Bold = TextStyle(
     fontSize: 20,
     color: AppColors.white,
